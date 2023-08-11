@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+
+:root {
+    --black: #060310;
+    /* https://www.color-hex.com/color/170b3b */
+    --dark_blue: #170B3B;
+    --purple: #341948;
+    --purple_haze: #9388A2;
+}
+
+html,
+body {
+    background-color: var(--black);
+    font-family: 'Inconsolata', monospace;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#time {
+    font-weight: 600;
+    font-size: 4em;
+    color: #30177b;
+}
+
+
+#search-box {
+    font-size: 4em;
+    padding: 5vh;
+    text-align: center;
+    margin-top: 20px;
+
+    outline: #d8cff6 dashed 2px;
+    border-radius: 15px;
+    border: none;
+
+    color: #d8cff6;
+    background-color: transparent;
+    caret-color: #d8cff6;
+}
+
+#search-box::placeholder {
+    color: #170B3B;
+}
+
+/* #search-button {
+    font-size: 4em;
+    padding: 5px;
+    margin-top: 20px;
+
+    background-color: var(--purple);
+    border: none;
+    border-radius: 10px;
+    color: var(--purple_haze);
+
+} */
+
+#shortcuts-table {
+    display: table;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4em;
+    border-spacing: 25px;
+    text-align: center;
+}
+
+.shortcuts-row {
+    display: table-row;
+}
+
+.shortcuts-row a {
+    display: inline-block;
+    padding: 25px;
+    color: #30177b;
+    text-decoration: underline dotted;
+}
+
+.shortcuts-row a:hover {
+    background-color: #d8cff6;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1560px) {
+    #time {
+        font-size: 110px;
+    }
+
+    #search-box {
+        font-size: 60px;
+        width: 80%;
+    }
+
+    .container {
+        top: 12vh;
+    }
+}
