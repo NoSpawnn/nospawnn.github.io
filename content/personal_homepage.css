@@ -12,12 +12,14 @@ html,
 body {
     background-color: var(--black);
     font-family: 'Inconsolata', monospace;
+    margin: 0;
 }
 
 .container {
     text-align: center;
     margin: auto;
     position: relative;
+    width: fit-content;
     top: 5vh;
     right: 0;
     bottom: 0;
