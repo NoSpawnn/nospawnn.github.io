@@ -322,6 +322,12 @@ body {
     transition: all .1s ease;
 }
 
+.project-link a:hover {
+    color: var(--text-hover-color);
+    outline: var(--text-hover-color) solid 2px;
+    text-decoration: underline solid;
+}
+
 footer {
     text-align: center;
 }
