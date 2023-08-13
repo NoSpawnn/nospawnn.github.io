@@ -50,6 +50,10 @@ body {
     border-radius: 10px;
 }
 
+.navbar-link a:hover {
+    color: var(--text-hover-color);
+}
+
 .navbar-link:last-child {
     margin-right: 0;
 }
@@ -222,6 +226,17 @@ body {
     transition: transform .1s ease;
     width: fit-content;
     max-width: 90%;
+}
+
+.about-me-text a {
+    all: unset;
+
+    text-decoration: underline solid;
+    cursor: pointer;
+}
+
+.about-me-text a:hover {
+    color: var(--text-hover-color);
 }
 
 .about-me-text-container:nth-child(even) {
