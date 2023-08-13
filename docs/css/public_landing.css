@@ -177,10 +177,12 @@ body {
 
 .about-me-row:nth-child(odd) {
     grid-template-columns: 60% 40%;
+    margin-right: 1rem;
 }
 
 .about-me-row:nth-child(even) {
     grid-template-columns: 40% 60%;
+    margin-left: 1rem;
 }
 
 .about-me-row:last-child {
