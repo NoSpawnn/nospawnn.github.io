@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,700;0,900;1,300;1,900&display=swap');
 
+:root {
+    --text-color: #C7D8E7;
+    --text-hover-color: #5C8AAC;
+    --primary-bg-color: #050B1F;
+    --secondary-bg-color: #122E76;
+}
+
 html,
 body {
-    color: white;
+    color: var(--text-color);
     font-family: 'Libre Franklin', sans-serif;
-    background-color: #210B2C;
+    background-color: var(--primary-bg-color);
     margin: 1rem;
     padding: 0;
 }
@@ -15,21 +22,24 @@ body {
     top: 2rem;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .navbar-links-container {
     display: flex;
-    background-color: white;
 }
 
 .navbar-link {
     padding: 1rem;
-    /* margin-right: 10px; */
+    margin-right: 10px;
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
 }
 
 .navbar-link a {
-    text-decoration: none;
+    all: unset;
+
+    cursor: pointer;
 }
 
 .navbar-link:last-child {
@@ -67,14 +77,14 @@ body {
 
     padding: 150px 100px 150px 50px;
     border-radius: 25px;
-    background-color: red;
+    background-color: var(--secondary-bg-color);
 }
 
 .welcome-text {
     font-weight: 900;
     font-size: 2rem;
 
-    transition: transform .2s ease;
+    transition: transform .1s ease;
 }
 
 .welcome-text:hover {
@@ -87,17 +97,17 @@ body {
 
 .welcome-social-link-container {
     font-size: 2rem;
-    transition: transform .2s ease;
+    transition: transform .1s ease, color .1s ease;
 }
 
 .welcome-social-link-container:hover {
     transform: scale(1.04);
+    color: var(--text-hover-color);
 }
 
 .welcome-social-link-image svg {
-    margin-right: .5rem;
+    margin-right: .75rem;
     text-decoration: underline none;
-    vertical-align: middle;
 }
 
 .welcome-social-link {
@@ -105,11 +115,11 @@ body {
 
     cursor: pointer;
     text-decoration: underline solid;
-    color: white;
+    /* color: white; */
 }
 
 .scroll-arrow {
-    width: 100%;
+    z-index: 1;
     text-align: center;
     position: sticky;
     top: 2.75rem;
@@ -138,17 +148,15 @@ body {
 }
 
 .about-me-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .about-me-text {
-    width: 80vw;
+    width: fit-content;
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 0.5rem;
 
-    transition: transform .2s ease;
+    transition: transform .1s ease;
 }
 
 .about-me-text:hover {
@@ -169,9 +177,8 @@ body {
 }
 
 .projects-heading-container {
-    font-size: 3rem;
+    font-size: 2rem;
     width: fit-content;
-    /* margin-bottom: 2rem; */
 }
 
 .projects-container {
@@ -189,13 +196,13 @@ body {
     height: fit-content;
     min-height: 10rem;
 
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-right: 1rem;
     padding: 20px;
-    background-color: blue;
+    background-color: var(--secondary-bg-color);
     border-radius: 20px;
 
-    transition: transform .2s ease;
+    transition: transform .1s ease;
 }
 
 .project:last-child,
@@ -213,8 +220,9 @@ body {
     align-items: center;
 }
 
-.project-title {
-    font-size: 2rem;
+.project-title h3 {
+    font-size: 1.5rem;
+    margin: 0;
     margin-right: 20px;
 }
 
@@ -226,7 +234,8 @@ body {
 .project-category {
     margin-right: 15px;
     padding: 15px;
-    outline: white solid 2px;
+    outline: var(--text-color) solid 2px;
+    border-radius: 5px;
 }
 
 .project-category:nth-child(even) {
@@ -250,9 +259,26 @@ body {
 }
 
 .project-link {
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.project-link a {
+    all: unset;
+
     margin-right: 15px;
     padding: 15px;
-    background-color: white;
+    cursor: pointer;
+    outline: var(--text-color) solid 2px;
+    border-radius: 5px;
+    transition: all .1s ease;
+
+}
+
+.project-link a:hover {
+    text-decoration: underline solid;
+    color: var(--text-hover-color);
+    outline: var(--text-hover-color) solid 2px;
 }
 
 footer {
