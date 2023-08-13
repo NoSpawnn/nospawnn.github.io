@@ -46,7 +46,7 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 615px;
-    height: calc(100vh - 51px);
+    height: calc(100vh - 75px);
 
     /* Match navbar height */
     margin-top: -51px;
@@ -106,6 +106,14 @@ body {
     cursor: pointer;
     text-decoration: underline solid;
     color: white;
+}
+
+.scroll-arrow {
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 2.75rem;
+    bottom: .5rem;
 }
 
 .bottom-of-page-container {
@@ -245,4 +253,8 @@ body {
     margin-right: 15px;
     padding: 15px;
     background-color: white;
+}
+
+footer {
+    text-align: center;
 }
