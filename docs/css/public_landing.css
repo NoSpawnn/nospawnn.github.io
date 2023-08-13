@@ -221,7 +221,7 @@ body {
 .about-me-text {
     transition: transform .1s ease;
     width: fit-content;
-    max-width: 96%;
+    max-width: 90%;
 }
 
 .about-me-text-container:nth-child(even) {
