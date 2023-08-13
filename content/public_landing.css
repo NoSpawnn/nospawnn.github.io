@@ -25,21 +25,29 @@ body {
     z-index: 2;
 }
 
+.navbar-clock-container {
+    text-align: center;
+}
+
+.navbar-date {
+    margin-bottom: 5px;
+}
+
 .navbar-links-container {
     display: flex;
 }
 
 .navbar-link {
-    padding: 1rem;
-    margin-right: 10px;
-    background-color: var(--secondary-bg-color);
-    border-radius: 10px;
+    margin-right: .5rem;
 }
 
 .navbar-link a {
     all: unset;
 
+    padding: 1rem;
     cursor: pointer;
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
 }
 
 .navbar-link:last-child {
@@ -84,6 +92,7 @@ body {
     font-weight: 900;
     font-size: 2rem;
 
+    animation: page-load-fly-in .5s;
     transition: transform .1s ease;
 }
 
@@ -95,9 +104,17 @@ body {
     display: block;
 }
 
+.welcome-links-container {
+    width: 360px;
+}
+
 .welcome-social-link-container {
     font-size: 2rem;
-    transition: transform .1s ease, color .1s ease;
+    transition: all .1s ease;
+    animation: page-load-write-on .5s forwards linear;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
 }
 
 .welcome-social-link-container:hover {
@@ -108,6 +125,7 @@ body {
 .welcome-social-link-image svg {
     margin-right: .75rem;
     text-decoration: underline none;
+    vertical-align: middle;
 }
 
 .welcome-social-link {
@@ -115,15 +133,11 @@ body {
 
     cursor: pointer;
     text-decoration: underline solid;
-    /* color: white; */
 }
 
 .scroll-arrow {
     z-index: 1;
     text-align: center;
-    position: sticky;
-    top: 2.75rem;
-    bottom: .5rem;
 }
 
 .bottom-of-page-container {
@@ -134,9 +148,6 @@ body {
 
     margin-top: 3rem;
     position: sticky;
-
-    /* Can remove once more projects are added */
-    height: calc(100vh - 100px);
 }
 
 .about-me-container {
@@ -144,19 +155,55 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 3rem;
+    width: 80%;
 }
 
 .about-me-title {
     font-size: 2rem;
 }
 
-.about-me-text {
-    width: fit-content;
-    font-size: 1.5rem;
+.about-me-inner-container {
     text-align: center;
+}
 
+.about-me-row {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-row:nth-child(odd) {
+    grid-template-columns: 60% 40%;
+}
+
+.about-me-row:nth-child(even) {
+    grid-template-columns: 40% 60%;
+}
+
+.about-me-image-container img {
+    border-radius: 10px;
     transition: transform .1s ease;
+    width: 100%;
+}
+
+.about-me-image-container img:hover {
+    transform: scale(1.075);
+}
+
+.about-me-text-container {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+}
+
+.about-me-text {
+    transition: transform .1s ease;
+    width: fit-content;
+    max-width: 96%;
 }
 
 .about-me-text:hover {
@@ -174,6 +221,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 3rem;
 }
 
 .projects-heading-container {
@@ -272,15 +320,30 @@ body {
     outline: var(--text-color) solid 2px;
     border-radius: 5px;
     transition: all .1s ease;
-
-}
-
-.project-link a:hover {
-    text-decoration: underline solid;
-    color: var(--text-hover-color);
-    outline: var(--text-hover-color) solid 2px;
 }
 
 footer {
     text-align: center;
+}
+
+@keyframes page-load-fly-in {
+    from {
+        transform: translateY(25%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes page-load-write-on {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
