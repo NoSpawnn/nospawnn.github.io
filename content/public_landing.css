@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,700;0,900;1,300;1,900&display=swap');
+
+html,
+body {
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #210B2C;
+    margin: 1rem;
+    padding: 0;
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links-container {
+    display: flex;
+    background-color: white;
+}
+
+.navbar-link {
+    padding: 1rem;
+    /* margin-right: 10px; */
+    border-radius: 10px;
+}
+
+.navbar-link a {
+    text-decoration: none;
+}
+
+.navbar-link:last-child {
+    margin-right: 0;
+}
+
+.navbar-link a:hover {
+    text-decoration: underline solid;
+}
+
+.top-of-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 615px;
+    height: calc(100vh - 51px);
+
+    /* Match navbar height */
+    margin-top: -51px;
+}
+
+.welcome-area {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.welcome-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    column-gap: 50px;
+
+    padding: 150px 100px 150px 50px;
+    border-radius: 25px;
+    background-color: red;
+}
+
+.welcome-text {
+    font-weight: 900;
+    font-size: 2rem;
+
+    transition: transform .2s ease;
+}
+
+.welcome-text:hover {
+    transform: scale(1.04);
+}
+
+#hi-text {
+    display: block;
+}
+
+.welcome-social-link-container {
+    font-size: 2rem;
+    transition: transform .2s ease;
+}
+
+.welcome-social-link-container:hover {
+    transform: scale(1.04);
+}
+
+.welcome-social-link-image svg {
+    margin-right: .5rem;
+    text-decoration: underline none;
+    vertical-align: middle;
+}
+
+.welcome-social-link {
+    all: unset;
+
+    cursor: pointer;
+    text-decoration: underline solid;
+    color: white;
+}
+
+.bottom-of-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3rem;
+    position: sticky;
+
+    /* Can remove once more projects are added */
+    height: calc(100vh - 100px);
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.about-me-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-me-text {
+    width: 80vw;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    transition: transform .2s ease;
+}
+
+.about-me-text:hover {
+    transform: scale(1.04);
+}
+
+.cv-text {
+    font-size: 1.5rem;
+
+    font-weight: 700;
+}
+
+.projects-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects-heading-container {
+    font-size: 3rem;
+    width: fit-content;
+    /* margin-bottom: 2rem; */
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: fit-content;
+    height: fit-content;
+    min-height: 10rem;
+
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 20px;
+    background-color: blue;
+    border-radius: 20px;
+
+    transition: transform .2s ease;
+}
+
+.project:last-child,
+.project:nth-child(3) {
+    margin-right: 0;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.project-categories {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.project-category {
+    margin-right: 15px;
+    padding: 15px;
+    outline: white solid 2px;
+}
+
+.project-category:nth-child(even) {
+    margin-right: 0;
+}
+
+.project-category:nth-child(n+3) {
+    margin-top: 15px;
+}
+
+.project-desc-container {
+    height: 100%;
+    margin-top: 15px;
+}
+
+.project-links-container {
+    flex-grow: 1;
+    display: flex;
+    margin-bottom: auto;
+    align-items: flex-end;
+}
+
+.project-link {
+    margin-right: 15px;
+    padding: 15px;
+    background-color: white;
+}
