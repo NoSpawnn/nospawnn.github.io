@@ -147,7 +147,6 @@ body {
     justify-content: center;
 
     margin-top: 3rem;
-    position: sticky;
 }
 
 .about-me-container {
@@ -169,7 +168,7 @@ body {
 .about-me-row {
     display: grid;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .about-me-row:nth-child(odd) {
@@ -180,14 +179,25 @@ body {
     grid-template-columns: 40% 60%;
 }
 
-.about-me-image-container img {
-    border-radius: 10px;
+.about-me-row:last-child {
+    margin-bottom: 0;
+}
+
+.about-me-image-container {
     transition: transform .1s ease;
+}
+
+.about-me-image-container img {
     width: 100%;
 }
 
-.about-me-image-container img:hover {
+.about-me-image-container:hover {
     transform: scale(1.075);
+}
+
+.about-me-image-container iframe {
+    display: block;
+    width: 100%;
 }
 
 .about-me-text-container {
@@ -195,15 +205,27 @@ body {
     font-size: 1.5rem;
     width: 100%;
     height: 100%;
-    text-align: left;
     align-items: center;
-    justify-content: left;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-me-text-container:nth-child(odd) {
+    margin-right: 1rem;
+}
+
+.about-me-text-container:nth-child(even) {
+    margin-left: 1rem;
 }
 
 .about-me-text {
     transition: transform .1s ease;
     width: fit-content;
     max-width: 96%;
+}
+
+.about-me-text-container:nth-child(even) {
+    text-align: right;
 }
 
 .about-me-text:hover {
@@ -351,5 +373,51 @@ footer {
 
     to {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .about-me-text-row {
+        margin-bottom: 2rem;
+    }
+
+    .about-me-image-container iframe {
+        height: 13rem;
+    }
+
+    .about-me-text-container:nth-child(odd) {
+        margin-right: 2rem;
+    }
+
+    .about-me-text-container:nth-child(even) {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-height: 1920px) and (max-width: 1080px) {
+    .projects-main-container {
+        padding-bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .welcome-container {
+        transform: scale(0.8);
+    }
+
+    .about-me-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top-of-page-container {
+        min-height: 750px;
+    }
+
+    .welcome-container {
+        grid-template-columns: auto;
+        padding-top: 0;
+        padding-bottom: 3rem;
     }
 }
