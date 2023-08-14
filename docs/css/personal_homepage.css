@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+/* https://coolors.co/palette/97dffc-858ae3-613dc1-4e148c-2c0735 */
 
 :root {
     --text-color: #97dffc;
     --text-hover-color: #858ae3;
-    --primary-bg-color: #050B1F;
-    --secondary-bg-color: #122E76;
 }
 
 html,
@@ -59,10 +58,13 @@ body {
 
 .shortcuts-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     order: 1;
     margin-bottom: 1rem;
     column-gap: 1rem;
+    row-gap: .5rem;
+    flex-wrap: wrap;
+    max-width: 25rem;
 }
 
 .shortcuts-container a {
@@ -70,6 +72,7 @@ body {
 
     text-decoration: underline solid;
     cursor: pointer;
+    padding: .4rem;
 }
 
 .shortcuts-container a:hover {
