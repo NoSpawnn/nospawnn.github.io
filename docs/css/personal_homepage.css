@@ -46,9 +46,8 @@ body {
 
 .search-box {
     font-size: 2rem;
-    width: 60%;
     background-color: transparent;
-    border: dotted;
+    border: dotted var(--text-color);
     border-radius: 1rem;
     padding: 1rem;
 }
