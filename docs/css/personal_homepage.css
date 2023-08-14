@@ -46,6 +46,7 @@ body {
 
 .search-box {
     font-size: 2rem;
+    width: 80%;
     background-color: transparent;
     border: dotted var(--text-color);
     border-radius: 1rem;
@@ -83,6 +84,10 @@ body {
 
     .search-container {
         order: 1;
+    }
+
+    .search-box {
+        width: auto
     }
 
     .shortcuts-container {
