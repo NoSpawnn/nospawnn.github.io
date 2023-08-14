@@ -9,31 +9,33 @@
 </head>
 
 <body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-links-container">
+                <div class="navbar-link">
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <div id="time">
-            <p id="date"></p>
-            <p id="clock"></p>
+        <div class="clock-container">
+            <div class="date"></div>
+            <div class="clock"></div>
         </div>
 
-        <div id="search-stuff">
-            <input type="search" id="search-box" name="search-box" placeholder="Search" autocomplete="off"
-                autofocus="on">
-            <!-- <br> -->
-            <!-- <button type="button" id="search-button" onclick="search()">Go</button> -->
+        <div class="search-container">
+            <input type="search" placeholder="Search" class="search-box" autofocus="yes">
         </div>
 
-        <div id="shortcuts-table">
-            <div class="shortcuts-row">
-                <a href="https://github.com/" target="_blank">GitHub</a>
-                <a href="https://app.skiff.com/mail/inbox" target="_blank">Skiff</a>
-                <a href="https://anilist.co/user/NoSpawnn/animelist" target="_blank">AniList</a>
-            </div>
-            <div class="shortcuts-row">
-                <a href="https://ncl.instructure.com/" target="_blank">Uni</a>
-                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">GMail</a>
-                <a href="https://open.spotify.com/" target="_blank">Spotify</a>
-            </div>
+        <div class="shortcuts-container">
+            <a href="https://github.com/NoSpawnn?tab=repositories" class="shortcut">GitHub</a>
+            <a href="https://app.skiff.com" class="shortcut">Skiff</a>
+            <a href="https://ncl.instructure.com" class="shortcut">Uni</a>
+            <a href="https://anilist.co/user/NoSpawnn/animelist" class="shortcut">AniList</a>
         </div>
+
     </div>
     <script src="js/personal_homepage.js"></script>
 </body>

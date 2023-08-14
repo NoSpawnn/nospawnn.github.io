@@ -1,107 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
 
 :root {
-    --black: #060310;
-    /* https://www.color-hex.com/color/170b3b */
-    --dark_blue: #170B3B;
-    --purple: #341948;
-    --purple_haze: #9388A2;
+    --text-color: #97dffc;
+    --text-hover-color: #858ae3;
+    --primary-bg-color: #050B1F;
+    --secondary-bg-color: #122E76;
 }
 
 html,
 body {
-    background-color: var(--black);
-    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#613dc1, #4e148c);
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 30px 5px rgb(0, 0, 0, 0.3) inset;
+}
+
+* {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--text-color);
 }
 
 .container {
-    text-align: center;
-    margin: auto;
-    position: relative;
-    width: fit-content;
-    top: 5vh;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-#time {
+.clock-container {
+    order: 0;
+    padding-bottom: 1rem;
     font-weight: 600;
-    font-size: 4em;
-    color: #30177b;
+    font-size: 2rem;
 }
 
+.search-container {
+    order: 2;
+    margin-bottom: 1rem;
+}
 
-#search-box {
-    font-size: 4em;
-    padding: 5vh;
-    text-align: center;
-    margin-top: 20px;
-
-    outline: #d8cff6 dashed 2px;
-    border-radius: 15px;
-    border: none;
-
-    color: #d8cff6;
+.search-box {
+    font-size: 2rem;
+    width: 60%;
     background-color: transparent;
-    caret-color: #d8cff6;
+    border: dotted;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
-#search-box::placeholder {
-    color: #170B3B;
+.search-box:focus {
+    outline: none;
 }
 
-/* #search-button {
-    font-size: 4em;
-    padding: 5px;
-    margin-top: 20px;
-
-    background-color: var(--purple);
-    border: none;
-    border-radius: 10px;
-    color: var(--purple_haze);
-
-} */
-
-#shortcuts-table {
-    display: table;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 4em;
-    border-spacing: 25px;
-    text-align: center;
+.shortcuts-container {
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+    margin-bottom: 1rem;
+    column-gap: 1rem;
 }
 
-.shortcuts-row {
-    display: table-row;
+.shortcuts-container a {
+    all: unset;
+
+    text-decoration: underline solid;
+    cursor: pointer;
 }
 
-.shortcuts-row a {
-    display: inline-block;
-    padding: 25px;
-    color: #30177b;
-    text-decoration: underline dotted;
+.shortcuts-container a:hover {
+    color: var(--text-hover-color);
 }
 
-.shortcuts-row a:hover {
-    background-color: #d8cff6;
-    border-radius: 5px;
-}
-
-
-@media screen and (max-width: 1560px) {
-    #time {
-        font-size: 110px;
-    }
-
-    #search-box {
-        font-size: 60px;
-        width: 80%;
-    }
-
+@media screen and (min-width: 1280px) and (min-height: 720px) {
     .container {
-        top: 12vh;
+        justify-content: center;
+        transform: scale(1.85);
+    }
+
+    .search-container {
+        order: 1;
+    }
+
+    .shortcuts-container {
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 3840px) and (min-height: 2160px) {
+    .container {
+        transform: scale(3.85);
     }
 }
