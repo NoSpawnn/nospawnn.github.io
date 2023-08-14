@@ -54,6 +54,11 @@ body {
     border: dotted var(--text-color);
     border-radius: 1rem;
     padding: 1rem;
+    text-align: left;
+}
+
+.search-box::placeholder {
+    text-align: center;
 }
 
 .search-box:focus {
