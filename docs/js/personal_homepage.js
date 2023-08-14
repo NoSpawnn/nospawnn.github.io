@@ -1,4 +1,5 @@
-const date_options = { weekday: 'long', day: 'numeric', month: 'short', year: 'numeric' };
+const date_options = { dateStyle: "full" };
+const time_options = { hourCycle: "h24" };
 const baseSearchURL = "https://duckduckgo.com/?q=";
 const searchBox = document.querySelector(".search-box");
 
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get and keep clock element updated
   const clockElement = document.querySelector(".clock");
   function updateClock(clock) {
-    clock.innerHTML = new Date().toLocaleTimeString();
+    clock.innerHTML = new Date().toLocaleTimeString(undefined, time_options);
   }
 
   updateClock(clockElement);
