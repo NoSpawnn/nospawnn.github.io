@@ -1,0 +1,3 @@
+[submodule "simple-web-calculator"]
+ path = calculator
+ url = https://github.com/NoSpawnn/simple-web-calculator
