@@ -50,9 +50,10 @@ body {
 .search-box {
     font-size: 2rem;
     width: 80%;
-    background-color: transparent;
-    border: dotted var(--text-color);
-    border-radius: 1rem;
+    background-color: var(--bg-lighter);
+    /* border: dotted var(--text-color); */
+    border-radius: .4rem;
+    border: none;
     padding: 1rem;
     text-align: left;
 }
