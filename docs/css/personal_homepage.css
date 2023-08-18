@@ -19,9 +19,6 @@ body {
     overflow: hidden;
     background-repeat: no-repeat;
     box-shadow: 0 0 30px 5px rgb(0, 0, 0, 0.3) inset;
-}
-
-* {
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
     color: var(--text-color);
