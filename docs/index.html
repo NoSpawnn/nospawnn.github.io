@@ -4,190 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/landing_favicon.ico">
     <link rel="stylesheet" href="css/public_landing.css">
     <title>NoSpawnn</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-clock-container">
-            <div class="navbar-date"></div>
-            <div class="navbar-clock"></div>
-        </div>
-        <nav>
-            <div class="navbar-links-container">
-                <span class="navbar-link">
-                    <a href="personal_homepage.html">Home</a>
-                </span>
-                <span class="navbar-link">
-                    <a href="">Blog</a>
-                </span>
-            </div>
-        </nav>
-    </div>
+    <div class="container">
 
-    <div class="top-of-page-container">
-        <div class="welcome-area">
-            <div class="welcome-container">
-                <div class="welcome-text-container">
-                    <div class="welcome-text">
-                        <h1><span id="hi-text">Hi! :3</span>
-                            <span id="name-text">I'm NoSpawnn.</span>
-                        </h1>
-                    </div>
-                </div>
-                <div class="welcome-links-container">
-                    <div class="welcome-social-link-container" style="animation-delay: 300ms;">
-                        <span class="welcome-social-link-image">
-                            <a href="" id="revolt" class="welcome-social-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M17.005 7.796c0 1.88-1.023 3.009-3.207 3.009h-3.615v-5.95H13.8c2.183 0 3.206 1.162 3.206 2.94zM.853 0l3.5 4.866v19.133h5.832v-9.06h1.398L16.563 24h6.583l-5.525-9.504a6.966 6.966 0 0 0 3.879-2.532a7 7 0 0 0 1.44-4.408C22.94 3.384 20.009 0 14.143 0h-9.79z" />
-                                </svg></span>NoSpawnn#1805</a>
-                    </div>
-                    <div class="welcome-social-link-container" style="animation-delay: 500ms;">
-                        <span class="welcome-social-link-image">
-                            <a href="https://github.com/NoSpawnn" id="github" class="welcome-social-link"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 .297c-6.63 0-12 5.373-12 12c0 5.303 3.438 9.8 8.205 11.385c.6.113.82-.258.82-.577c0-.285-.01-1.04-.015-2.04c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729c1.205.084 1.838 1.236 1.838 1.236c1.07 1.835 2.809 1.305 3.495.998c.108-.776.417-1.305.76-1.605c-2.665-.3-5.466-1.332-5.466-5.93c0-1.31.465-2.38 1.235-3.22c-.135-.303-.54-1.523.105-3.176c0 0 1.005-.322 3.3 1.23c.96-.267 1.98-.399 3-.405c1.02.006 2.04.138 3 .405c2.28-1.552 3.285-1.23 3.285-1.23c.645 1.653.24 2.873.12 3.176c.765.84 1.23 1.91 1.23 3.22c0 4.61-2.805 5.625-5.475 5.92c.42.36.81 1.096.81 2.22c0 1.606-.015 2.896-.015 3.286c0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                                </svg></span>NoSpawnn</a>
-                    </div>
-                    <div class="welcome-social-link-container" style="animation-delay: 700ms;">
-                        <span class="welcome-social-link-image">
-                            <a href="mailto:nospawnn@skiff.com" id="email" class="welcome-social-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                    class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
-                                    <path
-                                        d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
-                                </svg></span>nospawnn@skiff.com</a>
-                    </div>
-                    <div class="welcome-social-link-container" style="animation-delay: 900ms;">
-                        <span class="welcome-social-link-image">
-                            <a href="https://open.spotify.com/user/kfpqkoibdovo6gn7qvrmjbc1c" id="spotify"
-                                class="welcome-social-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12s12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24c-2.82-1.74-6.36-2.101-10.561-1.141c-.418.122-.779-.179-.899-.539c-.12-.421.18-.78.54-.9c4.56-1.021 8.52-.6 11.64 1.32c.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3c-3.239-1.98-8.159-2.58-11.939-1.38c-.479.12-1.02-.12-1.14-.6c-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721c-.18-.601.18-1.2.72-1.381c4.26-1.26 11.28-1.02 15.721 1.621c.539.3.719 1.02.419 1.56c-.299.421-1.02.599-1.559.3z" />
-                                </svg></span>NoSpawnn</a>
-                    </div>
-                    <div class="welcome-social-link-container" style="animation-delay: 1100ms;">
-                        <span class="welcome-social-link-image">
-                            <a href="https://anilist.co/user/NoSpawnn/" id="anilist" class="welcome-social-link"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M6.361 2.943L0 21.056h4.942l1.077-3.133H11.4l1.052 3.133H22.9c.71 0 1.1-.392 1.1-1.101V17.53c0-.71-.39-1.101-1.1-1.101h-6.483V4.045c0-.71-.392-1.102-1.101-1.102h-2.422c-.71 0-1.101.392-1.101 1.102v1.064l-.758-2.166zm2.324 5.948l1.688 5.018H7.144z" />
-                                </svg></span>NoSpawnn</a>
-                    </div>
-                </div>
+        <div class="heading-container">
+            <div class="heading">
+                Hey, I'm <h1>NoSpawnn</h1>.<span id="cursor">|</span>
             </div>
-        </div>
-    </div>
-
-    <div class="scroll-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-            class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-            <path id="arrow-path" fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
-        </svg>
-    </div>
-
-    <div class="bottom-of-page-container">
-        <div class="about-me-container">
-            <div class="about-me-title">
-                <h2>About me!</h2>
-            </div>
-            <div class="about-me-inner-container">
-                <div class="about-me-row">
-                    <div class="about-me-text-container">
-                        <div class="about-me-text">
-                            I'm a 19 year-old computer science student <s>and closeted femboy</s> who starts and stops
-                            way too many projects! As of recent I've wanted to actually "finish" one though, and this is
-                            the first thing I decided to do.
-                        </div>
-                    </div>
-                    <div class="about-me-image-container">
-                        <img src="images/stickerbomb.png" alt="You know how people stickerbomb their laptops?">
-                    </div>
-                </div>
-                <div class="about-me-row">
-                    <div class="about-me-image-container">
-                        <img src="images/thinkpad-about.png" alt="ThinkPad X230. EndeavourOS with Xfce4.">
-                    </div>
-                    <div class="about-me-text-container">
-                        <div class="about-me-text">
-                            I've also gotten into the world of linux as of late, and picked up a <a
-                                href="images/thinkpad-desktop-ss.png">ThinkPad</a>
-                            to tinker with, details of which you can see to the left. I'm pretty new to it all, so bear
-                            with me and my three brain cells please.
-                        </div>
-                    </div>
-                </div>
-                <div class="about-me-row">
-                    <div class="about-me-text-container">
-                        <div class="about-me-text">
-                            Oh yeah, I like VR too! I play in <a
-                                href="https://vrmasterleague.com/Breachers/Players/gIzDwbwdl8qIfe1SmcI2MQ2"
-                                target="_blank">VRML</a>,
-                            though not particularly consistently 💀. I use a Valve Index with 3 Tundra Trackers for FBT
-                            ;).
-                            If you're interested, you can see my PC specs <a
-                                href="https://uk.pcpartpicker.com/list/GVb7Dq" target="_blank">here</a>.
-                            (this YouTube channel is dead af, I just had nothing else to put here...)
-                        </div>
-                    </div>
-                    <div class="about-me-image-container">
-                        <iframe width="560" height="400" src="https://www.youtube.com/embed/VQlwS2q66Zk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
+            <div class="heading-subtext">
+                <h3><span title="XIX">19</span>, <span title="Computer Science">CS student</span>, <span
+                        title="Self-proclaimed...">programmer</span>, procrastinator, <span
+                        title="idk what you wanted from this one">femboy</span>.</h3>
             </div>
         </div>
 
-        <div class="projects-main-container">
+        <div class="socials-container">
+            <div class="social-link"><a href="https://github.com/NoSpawnn"><iconify-icon icon="mdi:github" width="48"
+                        height="48" title="GitHub" style="animation-delay: 600ms;"></iconify-icon></a></div>
+            <div class="social-link"><a href="https://open.spotify.com/user/kfpqkoibdovo6gn7qvrmjbc1c"><iconify-icon
+                        icon="mdi:spotify" width="48" height="48" title="Spotify"
+                        style="animation-delay: 800ms;"></iconify-icon></a></div>
+            <div class="social-link"><a href="mailto:nospawnn@skiff.com"><iconify-icon icon="mdi:email" width="48"
+                        height="48" title="Mail" style="animation-delay: 1000ms;"></iconify-icon></a></div>
+        </div>
+
+        <div class="projects-container">
             <div class="projects-heading-container">
                 <div class="projects-heading">
-                    <h2>Stuffs I'm workin' on</h2>
+                    <h2>Projects</h2>
+                </div>
+                <div class="projects-heading-subtext">
+                    <h3>My current main projects.</h3>
                 </div>
             </div>
-            <div class="projects-container">
-                <div class="project">
-                    <div class="project-header-container">
-                        <div class="project-title">
-                            <h3>This website</h3>
-                        </div>
-                        <div class="project-categories">
-                            <span class="project-category">Software</span>
-                            <span class="project-category">WebDev</span>
-                        </div>
-                    </div>
-                    <div class="project-desc-container">
-                        <div class="project-desc">
-                            <p>This website, made in HTML and CSS! (who would've thought?)</p>
-                        </div>
-                    </div>
-                    <div class="project-links-container">
-                        <span class="project-link"><a href="https://github.com/NoSpawnn/website"
-                                target="_blank">GitHub</a></span>
-                    </div>
-                </div>
+            <div class="project-links-container">
+                <ul>
+                    <li class="project"><a href="">This Website</i></a>
+                        <div class="project-desc">The website you're looking at right now! Written in HTML and CSS.
+                            (crazy right?)</div>
+                    </li>
+                    <!-- <li class="project"><a href="">Test</a>
+                        <div class="project-desc">Testing</div>
+                    </li> -->
+                </ul>
             </div>
         </div>
+
+        <div class="nav-container">
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-link"><a href="">Home</a></li>
+                    <li class="nav-link"><a href="about.html">About</a></li>
+                    <li class="nav-link"><a href="">All Projects</a></li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
-
-    <footer>
-        <strong>foot</strong>er? I think you mean <strong>metre</strong>er.
-    </footer>
-
-    <script src="js/public_landing.js"></script>
+    <script src="https://kit.fontawesome.com/98eb085d88.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
