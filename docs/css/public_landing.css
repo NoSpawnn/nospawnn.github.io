@@ -77,8 +77,8 @@ a:hover {
 
 .socials-container .social-link iconify-icon {
     color: var(--text-color);
-    animation: load-jump .8s normal ease-in-out;
-    transition: transform .3s ease;
+    animation: load-jump .6s normal ease-in-out; 
+    transition: transform .2s ease;
 }
 
 .socials-container .social-link iconify-icon:hover {
