@@ -1,5 +1,5 @@
 const date_options = { dateStyle: "full" };
-const time_options = { hourCycle: "h24" };
+const time_options = { hourCycle: "h24", timeZone: "Europe/London" };
 const baseSearchURL = "https://duckduckgo.com/?q=";
 const searchBox = document.querySelector(".search-box");
 
