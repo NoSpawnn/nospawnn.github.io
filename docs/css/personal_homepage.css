@@ -24,6 +24,24 @@ body {
     color: var(--text-color);
 }
 
+.navbar {
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar-links-container {
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+
+.navbar-link iconify-icon {
+    color: var(--text-color);
+}
+
+.navbar-link:hover iconify-icon {
+    color: var(--text-hover-color);
+}
+
 .container {
     display: flex;
     flex-direction: column;
