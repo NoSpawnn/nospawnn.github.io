@@ -42,6 +42,7 @@ mastodon:
 theme: minima
 minima:
   date_format: "%B %e, %Y"
+show_excerpts: true
 
 plugins:
   - jekyll-feed
