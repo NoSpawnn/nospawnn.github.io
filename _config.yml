@@ -17,6 +17,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# 
+# Liquid docs: https://shopify.github.io/liquid/
+# Jekyll docs: https://jekyllrb.com/docs/
 
 title: Adam Blighe
 author: Adam Blighe
