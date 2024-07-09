@@ -43,7 +43,7 @@ theme: minima
 minima:
   date_format: "%B %e, %Y"
 show_excerpts: true
-
+timezone: Europe/London
 plugins:
   - jekyll-feed
 
