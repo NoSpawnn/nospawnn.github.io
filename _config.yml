@@ -72,6 +72,11 @@ collections:
     output: true
     relative_directory: topics/aoc
 
+kramdown:
+  highlighter: rouge
+  syntax_highlighter_opts:
+      block:
+          line_numbers: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
