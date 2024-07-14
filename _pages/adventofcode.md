@@ -4,7 +4,7 @@ title: Advent of Code
 permalink: /aoc/
 ---
 
-This page (will) contain my solutions for current and past [Advent of Code](https://adventofcode.com/) problems! They're mainly in Kotlin, but I might throw some other languages in there every now and then too.
+This page (will) contain my solutions for current and past [Advent of Code](https://adventofcode.com/) problems!
 
 # Solutions
 <ul>
