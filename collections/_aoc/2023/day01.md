@@ -6,6 +6,10 @@ day: 01
 ---
 
 ```kotlin
+package adventOfCode.y2023.d01
+
+import adventOfCode.lib.Solver
+
 class Solution : Solver {
     override fun part1(input: String): Int {
         return solve(input, Regex("\\d"))
