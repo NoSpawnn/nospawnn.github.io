@@ -12,11 +12,13 @@ This page (will) contain my solutions for current and past [Advent of Code](http
     {% for year in years %}
     <li> 
         {{ year.name }}
+        <br>
         {% for day in (1..25) %}
             {% assign day_str = day | prepend: '0' | slice: -2, 2 %}
             {% assign day_file = site.aoc | where: "year", year.name | where: "day", day | first %}
             {% if day_file %}
-            • <a href="/aoc/{{ year.name }}/day{{ day_str }}">{{ day_str }}</a>
+                {% if day != 1 %} • {% endif %}
+                <a href="/aoc/{{ year.name }}/day{{ day_str }}">{{ day_str }}</a>
             {% else %}
                 {% break %}
             {% endif %}
