@@ -5,7 +5,7 @@ year: 2023
 day: 01
 ---
 
-```Kotlin
+```kotlin
 package adventOfCode.y2023.d01
 
 import adventOfCode.lib.Solver
