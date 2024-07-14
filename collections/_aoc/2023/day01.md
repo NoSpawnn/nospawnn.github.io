@@ -5,7 +5,7 @@ year: 2023
 day: 01
 ---
 
-```Kotlin
+```kotlin
 class Solution : Solver {
     override fun part1(input: String): Int {
         return solve(input, Regex("\\d"))
