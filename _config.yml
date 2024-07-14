@@ -24,11 +24,13 @@
 title: Adam Blighe
 author: Adam Blighe
 email: blog.exporter575@slmails.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Hey! This place has random writing about stuff I'm doing or interested in,
   and also serves as a portfolio of sorts. Thanks for checking it out!
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://nospawnn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+baseurl: ""
+url: "https://nospawnn.github.io"
+
 permalink: /:year/:month/:day/:title:output_ext
 
 # Social links
@@ -42,10 +44,34 @@ mastodon:
 theme: minima
 minima:
   date_format: "%B %e, %Y"
+
 show_excerpts: true
+
 timezone: Europe/London
+
 plugins:
   - jekyll-feed
+
+include:
+  - _pages
+
+header_pages:
+  - _pages/about.md
+  - _pages/blog.md
+  - _pages/topics.md
+
+defaults:
+  - scope:
+      path: _pages
+    values:
+      layout: page
+
+collections_dir: collections
+collections:
+  aoc:
+    output: true
+    relative_directory: topics/aoc
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
