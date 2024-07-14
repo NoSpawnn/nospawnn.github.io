@@ -36,3 +36,16 @@ $text: #050C9C;
     justify-content: space-between;
     align-items: center;
 }
+
+.rouge-table, .rouge-table *, .rouge-code {
+    border: none !important;
+}
+
+.rouge-code {
+    padding: 0;
+}
+
+.rouge-gutter {
+    border-right: 1px solid #e8e8e8 !important;
+    padding: 0;
+}
