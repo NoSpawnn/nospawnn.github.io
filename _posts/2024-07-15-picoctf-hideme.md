@@ -1,6 +1,6 @@
 ---
 title: PicoCTF - "hideme"
-date: 2024-07-14 21:16:00 +0100
+date: 2024-07-15 21:16:00 +0100
 categories: CTFs PicoCTF Forensics
 ---
 
