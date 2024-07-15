@@ -14,7 +14,7 @@ We're given a `.zip` archive containing a single image, my first thought was the
 
 ![Extracted data](/assets/img/picoctf-CanYouSee1.png)
 
-So of course, the flag we want must be hidden *somewhere* in the files' metadata. Checking the file with the `identify` command from ImageMagick didn't give anything useful, but `exiftool` did! Notice anything weird?
+So of course, the flag we want must be hidden *somewhere* in the files' metadata. Checking the file with the `identify` command from [ImageMagick](https://imagemagick.org/index.php) didn't give anything useful, but `exiftool` did! Notice anything weird?
 
 ![EXIF data from the image](/assets/img/picoctf-CanYouSee2.png)
 
