@@ -1,5 +1,15 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
+# Bundler cache
+.bundle
 vendor
+Gemfile.lock
+
+# Jekyll cache
+.jekyll-cache
+_site
+
+# RubyGems
+*.gem
+
+# IDE configurations
+.idea
+.vscode
