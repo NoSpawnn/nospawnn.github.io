@@ -1,5 +1,6 @@
 ---
 title: PicoCTF - "hideme"
+description: Solving "hideme" by Geoffrey Njogu
 date: 2024-07-15 21:16:00 +0100
 categories: CTFs PicoCTF Forensics
 ---

@@ -1,6 +1,7 @@
 ---
 title: PicoCTF - "CanYouSee"
 date: 2024-07-14 16:19:00 +0100
+description: Solving "CanYouSee" by Mubarak Mikail
 categories: CTFs PicoCTF Forensics
 ---
 
