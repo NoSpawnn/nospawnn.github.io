@@ -15,7 +15,7 @@ We get two files: `dump.pcap` and `flag.zip`. Trying to unzip the flag...
 
 ![The zip file is password protected](/assets/img/picoctf-FindAndOpen1.png)
 
-it's password protected! Ok, I guess we need to find the password somewhere in the pcap file then. Opening it up in wireshark, there's several distinct groups of packets, three of which have unknown protocols. I figure those are the one's I should focus on. Of the first section, there are nine packets, all of which are identical.
+it's password protected! Ok, I guess we need to find the password somewhere in the pcap file then. Opening it up in wireshark, there's several distinct groups of packets, some of which have unknown protocols. I figure those are the one's I should focus on. Of the first section, there are nine packets, all of which are identical.
 
 ![First group of packets](/assets/img/picoctf-FindAndOpen2.png)
 
@@ -35,7 +35,7 @@ Yet more unknown packets.
 Finally, there's another group of MDNS packets, which again, look normal. Across the non-MDNS packets, these strings are found (with corrected spelling):
 
 ```
-1. Ethernet secret secret: Is this the flag
+1. Ethernet secret: Is this the flag
 2. Could the flag have been splitted?
 3. VGhpcyBpcyB0aGUgc2VjcmV0OiBwaWNvQ1RGe1IzNERJTkdfTE9LZF8=
 4. bababkjaASKBKSBACVVAVSDDSSSSDSKJBJS
@@ -54,4 +54,4 @@ Bingo!
 
 ![We got it!](/assets/img/picoctf-FindAndOpen9.png)
 
-That felt like it involved a lot more steps than previous challenges, but it helped me get a bit more familiar with wireshark and I had a lot of fun with this challenge.
+That felt like it involved a lot more steps than previous challenges, but it helped me get a bit more familiar with wireshark and I had a lot of fun with this challenge!
